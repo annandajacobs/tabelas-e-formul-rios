@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tabela</title>
+</head>
+<body>
+    <h1>Portal do Coordenador Técnico/Médio > Consulta Geral de Turmas</h1>
+
+    <form>
+        <h2>Informe os critérios de busca das turmas</h2>
+        <div class="container">
+            <div id="check">
+                <div id="checkin" class="checkbox-and-select">
+                    <input type="checkbox" id="t1" name="t1" value="curso">
+                    <label for="t1">Tipo de Curso:</label>
+                    <select id="seletor1" name="seletor1">
+                        <option value="opcaoA">MÉDIO/TÉCNICO</option>
+                        <option value="opcaoB">TÉCNICO</option>
+                        <option value="opcaoC">SUPERIOR</option>
+                    </select>
+                </div>
+                
+                <div id="checkin" class="checkbox-and-select">
+                    <input type="checkbox" id="t2.1" name="t2.1" value="ano">
+                    <label for="t2.1">Ano-Período:</label>
+                    <select id="seletor2" name="seletor2">
+                        <option value="opcaoA">CAMPUS MACEIÓ - Maceió</option>
+                        <option value="opcaoB">CAMPUS ARAPIRACA - Arapiraca</option>
+                        <option value="opcaoC">CAMPUS SATUBA - Satuba</option>
+                    </select>
+                </div>
+                
+                <div id="checkin" class="checkbox-and-input">
+                    <input type="checkbox" id="t3" name="t3" value="cod componente">
+                    <label for="t3">Código do componente:</label>
+                    <input type="text" id="campo0" name="campo0" placeholder="Campo de Texto">
+                </div>
+                
+                <div class="checkbox-and-input">
+                    <input type="checkbox" id="t4" name="t4" value="cod turma">
+                    <label for="t4">Código da Turma:</label>
+                    <input type="text" id="campo1" name="campo1" placeholder="Campo de Texto">
+                </div>
+                
+                <div class="checkbox-and-input">
+                    <input type="checkbox" id="t5" name="t5" value="local">
+                    <label for="t5">Local:</label>
+                    <input type="text" id="campo2" name="campo2" placeholder="Campo de Texto">
+                </div>
+                
+                <div class="checkbox-and-input">
+                    <input type="checkbox" id="t6" name="t6" value="horário">
+                    <label for="t6">Horário:</label>
+                    <input type="text" id="campo3" name="campo3" placeholder="Campo de Texto">
+                </div>
+                
+                <div class="checkbox-and-input">
+                    <input type="checkbox" id="t7" name="t7" value="nome componente">
+                    <label for="t7">Código do componente:</label>
+                    <input type="text" id="campo4" name="campo4" placeholder="Campo de Texto">
+                </div>
+                
+                <div class="checkbox-and-input">
+                    <input type="checkbox" id="t8" name="t8" value="docente">
+                    <label for="t8">Nome do docente:</label>
+                    <input type="text" id="campo5" name="campo5" placeholder="Campo de Texto">
+                </div>
+                
+                <div class="checkbox-and-input">
+                    <input type="checkbox" id="t9" name="t9" value="ofertas curso">
+                    <label for="t9">Ofertadas ao curso:</label>
+                    <select id="seletor0" name="seletor0">
+                        <option value="opcaoA">TÉCNICO INTEGRADO AO ENSINO MÉDIO EM DESENVOLVIMENTO D</option>
+                        <option value="opcaoB">TÉCNICO INTEGRADO AO ENSINO MÉDIO EM ESTRADAS</option>
+                    </select>
+                </div>
+                
+                <div id="checkin" class="checkbox-and-select"> 
+                    <input type="checkbox" id="t10" name="t10" value="situacao">
+                    <label for="t10">Situação: </label>
+                    <select id="seletor3" name="seletor3">
+                        <option value="opcaoA">ABERTA</option>
+                        <option value="opcaoB">FECHADA</option>
+                    </select>
+                </div>
+                
+                <div id="checkin" class="checkbox-and-select">
+                    <input type="checkbox" id="t11" name="t11" value="tipo">
+                    <label for="t11">Tipo:</label>
+                    <select id="seletor4" name="seletor4">
+                        <option value="opcaoA">TODAS</option>
+                    </select>
+                </div>
+                
+                <div id="checkin">
+                    <input type="checkbox" id="t12" name="t12" value="exibir">
+                    <label for="t12">Exibir resultado da consulta em formato de relatório</label>
+                </div>
+                
+                <div id="checkin" class="checkbox-and-select">
+                    <input type="checkbox" id="t13" name="t13" value="ordem">
+                    <label for="t13">Ordenar por:</label>
+                    <select id="seletor5" name="seletor5">
+                        <option value="opcaoA">Ordenar por nome do componente</option>
+                    </select>
+                </div>
+
+                <div class="botoes">
+                    <button class="botao0" type="submit">Buscar</button>
+                    <button class="botao1" type="submit">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+ 
+        <div class="espaco">
+            
+        </div>
+
+    <table>
+        <tr class="topo-1">
+            <th colspan="8">Visualizar Menu</th>
+        </tr>
+        
+        <tr class="topo-2">    
+            <th colspan="8">Turmas Encontradas (15)</th>
+        </tr>
+        
+        <tr class="menu">
+            <th>Ano</th>
+            <th>Período</th>
+            <th>Docentes</th>
+            <th>Tipo</th>
+            <th>Situação</th>
+            <th>Horário</th>
+            <th>Local</th>
+            <th>Mat./Cap.</th>
+        </tr>
+        
+        <tr class="disciplina">
+            <th colspan="8">MACDSIAPSF3 - ANÁLISE E PROJETO DE SOFTWARE E INTERFACE HUMANO MÁQUINA - CAMPUS
+            MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>AUGUSTO CESAR MELO DE OLIVEIRA (80h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>6M56</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+                
+        <tr class="disciplina">
+            <th colspan="8">MACDSIBIOL3 - BIOLOGIA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>CLAUDIANA MOURA DOS SANTOS (40h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>5M5</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+
+        <tr  class="disciplina">
+            <th colspan="8">MACDSIFILO3 - FILOSOFIA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>MICHEL PORDEUS DE CARVALHO (40h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>5M1</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+
+        <tr class="disciplina">
+            <th colspan="8">MACDSIFISC3 - FÍSICA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>DACIO LOPES CAMERINO FILHO (80h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>3M12</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+
+        <tr class="disciplina">
+            <th colspan="8">MACDSIGEOG3 - GEOGRAFIA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+    
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>JOAQUIM ALEXANDRE MOREIRA AZEVEDO (40h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>5M2</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+
+        <tr class="disciplina">
+            <th colspan="8">MACDSIGOST3 - GESTÃO ORGANIZACIONAL E SEGURANÇA DO TRABALHO - CAMPUS MACEIO
+                    (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>WILMA KARLLA PAIXAO SILVESTRE (80h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>6M12</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+        
+        <tr class="disciplina">
+            <th colspan="8">MACDSIHIST3 - HISTÓRIA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>GUSTAVO JOSE CERQUEIRA PESSOA (80h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>2M12</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+        
+        <tr class="disciplina">
+            <th colspan="8">MACDSILSOR3 - LABORATÓRIOS DE SISTEMAS OPERACIONAIS E REDES - CAMPUS MACEIO
+                (MÉDIO/TÉCNICO)</th>
+        </tr>
+
+         <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>GLEVSON DA SILVA PINTO (160h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>4M56 6M34</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+                   
+        <tr class="disciplina">
+            <th colspan="8">MACDSILESP3 - LÍNGUA ESPANHOLA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>JOANA DARC FERREIRA DE MACEDO (80h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>4M34</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+        
+        <tr class="disciplina">
+            <th colspan="8">MACDSILPPT3 - LÍNGUA PORTUGUESA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>MARIA LUCILENE DA SILVA (120h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>2M3 3M34</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+        
+        <tr class="disciplina">
+            <th colspan="8">MACDSIMATE3 - MATEMÁTICA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>DANIEL NICOLAU BRANDAO (80h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>5M34</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+        
+        <tr class="disciplina">
+            <th colspan="8">MACDSIPNDI3 - PROJETO DE NEGÓCIOS DIGITAIS - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>FABRISIA FERREIRA DE ARAUJO (80h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>4M12</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+        
+        <tr class="disciplina">
+            <th colspan="8">MACDSIQUIM3 - QUÍMICA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>MARCIO JOSE DE MORAES LOPES (80h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>3M56</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+        
+        <tr class="disciplina">
+            <th colspan="8">MACDSISOCI3 - SOCIOLOGIA - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+        
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>ANDREIA SILVA FERREIRA (40h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>5M6</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+        
+        <tr class="disciplina">
+            <th colspan="8">MACDSITEPI3 - TÓPICOS ESPECIAIS E PROJETO INTEGRADOR - CAMPUS MACEIO (MÉDIO/TÉCNICO)</th>
+        </tr>
+       
+        <tr class="conteudo">
+            <td>2022.1</td>
+            <td>Turma 913A</td>
+            <td>FLAVIO MOTA MEDEIROS (120h)</td>
+            <td>REGULAR</td>
+            <td>ABERTA</td>
+            <td>2M456</td>
+            <td></td>
+            <td>27/50 alunos</td>
+        </tr>
+    </table>
+</body>
+</html>
